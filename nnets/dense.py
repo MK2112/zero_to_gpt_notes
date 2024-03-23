@@ -1,10 +1,17 @@
-from network import Module
-from activation import Relu
 import numpy as np
 import math
 
+class Relu:
+    def __init__(self):
+        pass
 
-class Dense(Module):
+    def forward(self, x):
+        return np.maximum(x, 0)
+
+    def backward(self, grad, lr, prev_hidden):
+        return np.multiply(grad, np.heaviside(prev_hidden, 0))
+
+class Dense:
     def __init__(self, input_size, output_size, bias=True, activation=True, seed=0):
         self.add_bias = bias
         self.add_activation = activation
@@ -45,7 +52,7 @@ class Dense(Module):
         return grad
 
 
-class DenseManualUpdate(Module):
+class DenseManualUpdate:
     """
     Dense layer, but we manually update the weights and bias externally.
     """
