@@ -16,52 +16,51 @@ To use this course, go through each chapter sequentially.  Read the lessons or w
 
 An overview of the course and topics we'll cover.
 
-- [Course intro](explanations/intro.ipynb)
+- [Course intro](./0-Introduction/intro.ipynb)
 - [Video](https://youtu.be/C9FORlAlByo) (optional)
 
 **1. Math and NumPy fundamentals**
 
 This is an optional lesson with a basic refresher on linear algebra and calculus for deep learning.  We'll use NumPy to apply the concepts.  If you're already familiar with these topics, you can skip this lesson.
 
-- [Lesson](explanations/linalg.ipynb)
+- [Lesson](./1-Math_and_Numpy/linalg.ipynb)
 - [Video](https://youtu.be/5zbTnOd_53g) (optional)
 
 **2. Gradient descent**
 
 Gradient descent is how neural networks train their parameters to match the data.  It's the "learning" part of deep learning.
 
-- [Lesson](explanations/linreg.ipynb) 
+- [Lesson](./2-Gradient_Descent/linreg.ipynb) 
 - [Video](https://youtu.be/-cs5D91eBLE) (optional)
-- [Implementation](notebooks/linreg/linreg.ipynb)
 
 **3. Dense networks**
 
 Dense networks are the basic form of a neural network, where every input is connected to an output.  These can also be called fully connected networks.
 
-- [Lesson](explanations/dense.ipynb)
+- [Lesson](./3-Dense_Networks/dense.ipynb)
 - [Video](https://youtu.be/MQzG1hfhow4) (optional)
-- [Implementation](notebooks/dense/dense.ipynb)
+- [Implementation](./3-Dense_Networks/dense/dense_numpy.ipynb)
 
 **4. Classification with neural networks**
 
 Classification is how we get neural networks to categorize data for us.  Classification is used by language models like GPT to predict the next word in a sequence.
 
-- [Lesson](explanations/classification.ipynb)
+- [Lesson](./4-Classification/classification.ipynb)
 - [Video](https://youtu.be/71GtdWmznok) (optional)
 
 **5. Recurrent networks**
 
 Recurrent neural networks (RNNs) are optimized to process sequences of data.  They're used for tasks like translation and text classification.
 
-- [Lesson](explanations/rnn.ipynb)
+- [Lesson](./5-RNN/rnn.ipynb)
 - [Video](https://youtu.be/4wuIOcD1LLI) (optional)
-- [Implementation](notebooks/rnn/rnn.ipynb)
+- [Implementation](./5-RNN/rnn/rnn.ipynb)
 
 **6. Backpropagation in depth**
 
 So far, we've taken a loose look at backpropagation to let us focus on understanding neural network architecture.  We'll build a miniature version of PyTorch, and use it to understand backpropagation better.
 
-- [Lesson](explanations/comp_graph.ipynb)
+- [Lesson](./6-Backprop/comp_graph.ipynb)
 - [Video](https://youtu.be/RyKrG8rTGUY) (optional)
 
 **7. Optimizers**
